@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cell_text_size">40sp</dimen>
+    <dimen name="value_button_text_size">50sp</dimen>
+    <dimen name="value_button_stroke_width">3dp</dimen>
+    <dimen name="padding_left_radio_button">20dp</dimen>
+    <dimen name="arrow_button_text_size">20sp</dimen>
+    <dimen name="padding_value">10dp</dimen>
+    <dimen name="padding_value_right">10dp</dimen>
+    <dimen name="imagearrow">25dp</dimen>
+
+</resources>

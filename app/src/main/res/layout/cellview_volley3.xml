@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/volleyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/enterVolley"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Entrer la vollee 2"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+      />
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Summary"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/volleyId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="99"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_weight="1"
+        android:typeface="monospace" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/volley1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="10+"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:maxLines="1"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/volley2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="10+"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/volley3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="10+"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/volleySum"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:gravity="right|center_vertical"
+        android:maxLines="1"
+        android:text="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/volleyCumulSum"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:text="999"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+</LinearLayout>

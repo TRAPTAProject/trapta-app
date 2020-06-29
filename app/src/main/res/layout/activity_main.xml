@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/titleLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="   TRAPTA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/networkflag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/abc_ic_commit_search_api_mtrl_alpha" />
+
+            <ImageView
+                android:id="@+id/broadcastflag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_wifi_white" />
+
+            <Button
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttona"
+                android:text="   MENU   "
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:background="#37a4ce"
+                android:layout_height="2dp" />
+        
+     <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content" >
+
+           <com.traps.trapta.AutofitTextView
+               android:id="@+id/textRun"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:maxLines="1"
+               android:text="SÉRIE 1"
+               android:textSize="30sp"
+               android:layout_weight="1"
+               android:textStyle="bold" />
+           
+                <View
+                    android:id="@+id/separator2"
+                android:layout_height="match_parent"
+                android:background="#37a4ce"
+                android:layout_width="2dp" />
+
+               <com.traps.trapta.AutofitTextView
+                   android:id="@+id/textTarget"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="CIBLE 2"
+                   android:maxLines="1"
+                   android:textSize="30sp"
+                   android:layout_weight="1"
+                   android:gravity="right"
+                   android:textStyle="bold" />
+
+
+       </LinearLayout>
+       
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/archerButtonLayout"
+        android:layout_height="wrap_content" >
+
+        <com.traps.trapta.AutofitButton
+            android:id="@+id/buttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttona"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="A"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <com.traps.trapta.AutofitTextView
+            android:id="@+id/scoreMatchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="0 - 0"
+            android:maxLines="1"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+       
+       <com.traps.trapta.AutofitButton
+            android:id="@+id/buttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttona"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="B"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+               
+       <com.traps.trapta.AutofitButton
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttona"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="C"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+                      
+       <com.traps.trapta.AutofitButton
+            android:id="@+id/buttonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttona"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="D"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+        
+       
+
+    </LinearLayout>
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/textName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="Hitchcock, Alfred"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+         android:textSize="50sp"
+            android:textStyle="bold"
+         />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

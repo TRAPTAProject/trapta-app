@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/askLayout"
+    android:orientation="vertical" >
+
+
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/askLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the text. The question goes here. Then, 2 buttons are below."
+        android:textSize="25sp"
+        android:gravity="center"
+        android:maxLines="10"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_weight="2"
+        />
+
+
+    <Button
+        android:id="@+id/askbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:text="Button"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/askbutton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:text="Button"
+        android:textSize="25sp" />
+
+</LinearLayout>

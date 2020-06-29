@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutWelcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+
+    tools:context=".WelcomeActivity" >
+
+    <Spinner
+        android:id="@+id/spinnerTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/textMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="QUALIF / MATCH"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/row1"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/letterView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" A "
+                android:singleLine="true"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/trispot" />
+               
+            <com.traps.trapta.AutofitTextView
+                android:id="@+id/nameView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ARCHER A"
+                android:textSize="40sp"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+ 
+
+        </LinearLayout>
+
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/row2"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/letterView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" B "
+                android:singleLine="true"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/trispot" />
+
+            <com.traps.trapta.AutofitTextView
+                android:id="@+id/nameView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POTTER HARRY"
+                android:textSize="40sp"
+                android:singleLine="true"/>
+
+ 
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/row3"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/letterView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" C "
+                android:singleLine="true"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/trispot" />
+
+            <com.traps.trapta.AutofitTextView
+                android:id="@+id/nameView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POTTER HARRY"
+                android:textSize="40sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/row4"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/letterView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" D "
+                android:singleLine="true"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/trispot" />
+
+            <com.traps.trapta.AutofitTextView
+                android:id="@+id/nameView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POTTER HARRY"
+                android:textSize="40sp"
+                android:singleLine="true"/>
+
+ 
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/guideBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="   Démarrer le guide audio"
+            android:textSize="25sp" />
+
+
+
+        <com.traps.trapta.AutofitButton
+            android:id="@+id/button1select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+  
+</LinearLayout>

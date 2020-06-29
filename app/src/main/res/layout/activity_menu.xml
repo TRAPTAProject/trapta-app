@@ -1,0 +1,83 @@
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/MenuLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        tools:context=".MenuActivity" >
+
+        <Button
+            android:id="@+id/MenuButton00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="Redémarrer\nen mode connecté"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/MenuButton07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="Redémarrer\nen mode tout seul"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/MenuButton01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="SÉRIE 2"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/MenuButton02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="SÉRIE 3"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/MenuButton03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="Renvoyer série"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/MenuButton05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="Couleurs pour extérieur"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/MenuButton08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/buttona"
+            android:text="Retour"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

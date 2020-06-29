@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TRAPTA</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_volley">VolleyActivity</string>
+    <string name="title_activity_connect">ConnectActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_settings">Configuration</string>
+    <string name="title_activity_guide">Bienvenue</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_main_activity">1.27 Compet</string>
+
+</resources>
