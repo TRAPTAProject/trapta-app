@@ -175,17 +175,30 @@
     <com.traps.trapta.AutofitTextView
         android:id="@+id/textName"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_height="59dp"
         android:ellipsize="end"
-        android:singleLine="true"
+        android:gravity="center"
         android:maxLines="1"
+        android:singleLine="true"
         android:text="Hitchcock, Alfred"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF"
-         android:textSize="50sp"
-            android:textStyle="bold"
-         />
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.traps.trapta.AutofitTextView
+        android:id="@+id/infoArcher"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="CHSL"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
     <ListView
         android:id="@+id/listView"

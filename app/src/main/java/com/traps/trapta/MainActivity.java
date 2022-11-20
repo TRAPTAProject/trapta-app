@@ -61,6 +61,7 @@ public class  MainActivity extends Activity implements OnItemClickListener, Watc
 	private int currentHeat = 0;
 	private VolleyListAdapter listAdapter;
 	private TextView archerNameView;
+	private TextView archerInfoView;
 	private TextView runView;
 	private TextView targetView;
 	private TextView scoreMatchText;
@@ -190,6 +191,7 @@ public class  MainActivity extends Activity implements OnItemClickListener, Watc
         broadcastImage.setVisibility(View.INVISIBLE);
 
         archerNameView = findViewById(R.id.textName);
+		archerInfoView = findViewById(R.id.infoArcher);
 		targetView = findViewById(R.id.textTarget);
 		runView = findViewById(R.id.textRun);
 		runView.setBackgroundColor(Color.GRAY);
@@ -321,6 +323,7 @@ public class  MainActivity extends Activity implements OnItemClickListener, Watc
 
 		if (StaticParam.colorInverted) {
 			archerNameView.setTextColor(Color.BLACK);
+			archerInfoView.setTextColor(Color.BLACK);
 			LinearLayout layout = (LinearLayout)findViewById(R.id.LinearLayout1);
 			layout.setBackgroundColor(Color.WHITE);
 			scoreMatchText.setTextColor(Color.BLACK);
@@ -338,6 +341,7 @@ public class  MainActivity extends Activity implements OnItemClickListener, Watc
 		}
 		else {
 			archerNameView.setTextColor(Color.WHITE);
+			archerInfoView.setTextColor(Color.WHITE);
 			LinearLayout layout = (LinearLayout)findViewById(R.id.LinearLayout1);
 			layout.setBackgroundColor(Color.BLACK);
 			scoreMatchText.setTextColor(Color.WHITE);
@@ -414,6 +418,7 @@ public class  MainActivity extends Activity implements OnItemClickListener, Watc
 		List<Volley> volleyList = archer.getHeatList().get(currentHeat).getVolleyList();
 		
 		archerNameView.setText(archer.getName());
+		archerInfoView.setText("Licence : " + archer.getLicense() + " [ " + archer.getCategory() + " ]");
 		listAdapter.updateArcher(archer, currentHeat);
 		
 		int buttonIndex = archer.getLetter()-'A';
@@ -1341,7 +1346,7 @@ public class  MainActivity extends Activity implements OnItemClickListener, Watc
 					}
 					listView.getLocationInWindow(coord);
 					int targetX = coord[0];
-					int targetY = coord[1]+archerNameView.getHeight();
+					int targetY = coord[1]+archerInfoView.getHeight();
 
 					handImage.setVisibility(View.VISIBLE);
 					handLayout.leftMargin = targetX;
