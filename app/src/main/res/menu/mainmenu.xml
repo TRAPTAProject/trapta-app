@@ -1,46 +1,46 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" >
 
      
      <item
         android:id="@+id/action_welcome"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="Redémarrer"/>
      
      <item
         android:id="@+id/action_selectrun"
         android:title="Changer série" 
-        android:showAsAction="never"/>
+        app:showAsAction="never"/>
      
       <item
         android:id="@+id/action_send_heat"
         android:title="Envoyer série" 
-        android:showAsAction="never"/>
+        app:showAsAction="never"/>
      
      <item
         android:id="@+id/action_lockvolley"
         android:title="Déverrouiller volées" 
-        android:showAsAction="never"/>
+        app:showAsAction="never"/>
     
      
      <item
         android:id="@+id/action_invert"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="Def color"/>
      
      
      <item
         android:id="@+id/action_fontlarger"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="Police plus grande"/>
      
      <item
         android:id="@+id/action_fontsmaller"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="Police plus petite"/>
      
      <item
         android:id="@+id/action_config"
-        android:showAsAction="never"
+        app:showAsAction="never"
         android:title="Licence"/>
           
  

@@ -273,7 +273,7 @@ public class WelcomeActivity extends Activity implements OnItemSelectedListener,
 		guide = guideBox.isChecked();
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean("guide", guide);
-        editor.commit();
+        editor.apply();
         Intent data = new Intent();
 		data.putExtra("standAloneMode", standAloneMode);
 		if (match) {

@@ -12,7 +12,7 @@ import android.widget.Button;
  * @attr ref R.styleable.AutofitTextView_minTextSize
  * @attr ref R.styleable.AutofitTextView_precision
  */
-public class AutofitButton extends Button implements AutofitHelper.OnTextSizeChangeListener {
+public class AutofitButton extends androidx.appcompat.widget.AppCompatButton implements AutofitHelper.OnTextSizeChangeListener {
 
     private AutofitHelper mHelper;
 

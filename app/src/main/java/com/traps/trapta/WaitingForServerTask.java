@@ -18,7 +18,7 @@ public class WaitingForServerTask extends AsyncTask<Void, Void, Boolean> {
 	
 	@Override 
 	protected void onPreExecute() {
-		WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+		WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		wifiManager.setWifiEnabled(true);
 		progressDialog = new ProgressDialog(context, ProgressDialog.STYLE_SPINNER);
 		progressDialog.setTitle("Recherche réseau");

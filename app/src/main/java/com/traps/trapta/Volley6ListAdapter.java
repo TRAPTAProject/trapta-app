@@ -1,5 +1,7 @@
 package com.traps.trapta;
 
+import java.util.Locale;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.text.Layout;
@@ -72,7 +74,7 @@ public class Volley6ListAdapter extends VolleyListAdapter {
                     builder.append("Nb 10        : "+archer.getCodeCount(10)); builder.append("\n");
                     builder.append("Nb  9        : "+archer.getCodeCount(9)); builder.append("\n");
                 }
-                builder.append(    "Moyenne      : "+String.format("%.2f", archer.getAverage()));
+                builder.append(    "Moyenne      : "+String.format(Locale.getDefault(), "%.2f", archer.getAverage()));
                 summary.setMaxLines(7);
 
 				msg.setVisibility(View.GONE);
