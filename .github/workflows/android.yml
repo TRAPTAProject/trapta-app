@@ -26,3 +26,43 @@ jobs:
       run: ./gradlew build
     - name: Assemble with Gradle
       run: ./gradlew assemble
+    - name: Save apk artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: trapta-app-unsigned
+        path: ${{ github.workspace }}/app/build/outputs/apk/release/app-release-unsigned.apk
+
+
+  release:
+    runs-on: ubuntu-18.04
+    defaults:
+      run:
+        shell: bash
+    needs: [build]
+    steps:
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          New Trapta App version
+        draft: true
+        prerelease: false
+
+    
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v3
+
+    - name: Upload unsigned Apk
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: trapta-app-unsigned/app-release-unsigned.apk
+        asset_name: trapta-app-unsigned.apk
+        asset_content_type: application/zip
