@@ -16,7 +16,7 @@
         android:label="TRAPTA"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.traps.trapta.MainActivity"
+            android:name="com.trapta.app.MainActivity"
             android:launchMode="singleTop"
             android:exported="true">
             <intent-filter>
@@ -26,19 +26,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.traps.trapta.VolleyActivity"
+            android:name="com.trapta.app.VolleyActivity"
             android:label="Saisie de la volée" >
         </activity>
         <activity
-            android:name="com.traps.trapta.WelcomeActivity"
+            android:name="com.trapta.app.WelcomeActivity"
             android:label="@string/title_activity_welcome" >
         </activity>
         <activity
-            android:name="com.traps.trapta.GuideActivity"
+            android:name="com.trapta.app.GuideActivity"
             android:label="@string/title_activity_guide" >
         </activity>
         <activity
-            android:name="com.traps.trapta.MenuActivity"
+            android:name="com.trapta.app.MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
     </application>

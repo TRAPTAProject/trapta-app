@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.traps.trapta"
+    namespace "com.trapta.app"
 
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.traps.trapta"
+        applicationId "com.trapta.app"
         minSdkVersion 17
         targetSdkVersion 33
         versionCode 128

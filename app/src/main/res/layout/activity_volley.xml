@@ -18,7 +18,7 @@
         android:layout_marginRight="0dp"
         android:orientation="vertical" >
 
-        <com.traps.trapta.AutofitTextView
+        <com.trapta.app.AutofitTextView
             android:id="@+id/volleyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:textColor="#FFFFFF"
             android:textSize="40sp" />
         
-         <com.traps.trapta.AutofitTextView
+         <com.trapta.app.AutofitTextView
              android:id="@+id/volleyId"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:paddingTop="10dp" 
                 >
 
-                <com.traps.trapta.AutofitButton
+                <com.trapta.app.AutofitButton
                     android:id="@+id/arrowLabel1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -71,7 +71,7 @@
                     android:textStyle="bold"
                     android:typeface="sans" />
 
-                <com.traps.trapta.AutofitButton
+                <com.trapta.app.AutofitButton
                     android:id="@+id/arrowValue1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -96,7 +96,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal" >
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowLabel2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -107,7 +107,7 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
             
-           <com.traps.trapta.AutofitButton
+           <com.trapta.app.AutofitButton
                 android:id="@+id/arrowValue2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -131,7 +131,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal" >
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowLabel3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -142,7 +142,7 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowValue3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -166,7 +166,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal" >
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowLabel4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -178,7 +178,7 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowValue4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -202,7 +202,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal" >
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowLabel5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -214,7 +214,7 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowValue5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -238,7 +238,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal" >
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowLabel6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -249,7 +249,7 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
             
-            <com.traps.trapta.AutofitButton
+            <com.trapta.app.AutofitButton
                 android:id="@+id/arrowValue6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -269,7 +269,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 
-                <com.traps.trapta.AutofitButton
+                <com.trapta.app.AutofitButton
                     android:id="@+id/abortButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -285,7 +285,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
                 
-                <com.traps.trapta.AutofitButton
+                <com.trapta.app.AutofitButton
                     android:id="@+id/okButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -313,7 +313,7 @@
       android:layout_height="fill_parent"
       android:orientation="vertical" >
 
-      <com.traps.trapta.AutofitButton
+      <com.trapta.app.AutofitButton
             android:id="@+id/button11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -325,7 +325,7 @@
             android:textColor="#000000"
             android:background="@drawable/drawbuttonyellow"
             android:text="10X" />
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -338,7 +338,7 @@
             android:background="@drawable/drawbuttonyellow"
             android:text="10" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -351,7 +351,7 @@
             android:background="@drawable/drawbuttonyellow"
             android:text="9" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -363,7 +363,7 @@
             android:textSize="35sp"
             android:textStyle="bold" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -375,7 +375,7 @@
             android:textSize="35sp"
             android:textStyle="bold" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -388,7 +388,7 @@
             android:background="@drawable/drawbuttonblue"
             android:text="6" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -400,7 +400,7 @@
             android:background="@drawable/drawbuttonblue"
             android:text="5" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -412,7 +412,7 @@
             android:background="@drawable/drawbuttonblack"
             android:text="4" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -424,7 +424,7 @@
             android:background="@drawable/drawbuttonblack"
             android:text="3" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -438,7 +438,7 @@
             android:background="@drawable/drawbuttonwhite"
             android:text="2" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/okButtonSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -451,7 +451,7 @@
             android:background="@drawable/drawbuttonwhite"
             android:text="1" />
         
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/buttonM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

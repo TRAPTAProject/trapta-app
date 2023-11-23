@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" />
 
-    <com.traps.trapta.AutofitTextView
+    <com.trapta.app.AutofitTextView
         android:id="@+id/textMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
                
-            <com.traps.trapta.AutofitTextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/nameView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
 
-            <com.traps.trapta.AutofitTextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/nameView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
 
-            <com.traps.trapta.AutofitTextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/nameView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
 
-            <com.traps.trapta.AutofitTextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/nameView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
 
 
 
-        <com.traps.trapta.AutofitButton
+        <com.trapta.app.AutofitButton
             android:id="@+id/button1select"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
