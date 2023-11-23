@@ -1,6 +1,7 @@
 package com.trapta.app;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class StaticParam {
 	
@@ -16,7 +17,7 @@ public class StaticParam {
 	public static int targetId = 0;
 	public static boolean standAloneMode = false;
 	public static TargetInfo[] standAloneTargetInfo;
-	public static ArrayList<Archer>[] standAloneArcherList;
+	public static Vector< ArrayList<Archer> > standAloneArcherList;
 	public static boolean colorInverted = false; 
 	
 	static {
@@ -37,21 +38,21 @@ public class StaticParam {
         standAloneTargetInfo[2].addArcher('B', "COCO LAPIN", false);
         standAloneTargetInfo[2].addArcher('C', "TIGROU", true);
 
-        standAloneArcherList = new ArrayList[3];
-        standAloneArcherList[0] = new ArrayList<>();
-        standAloneArcherList[0].add(new Archer(-1, "123456H", "SHCL", "ARCHER A", 'A', false));
-        standAloneArcherList[0].add(new Archer(-2, "789951L", "SFCL", "ARCHER B", 'B',false));
-        standAloneArcherList[0].add(new Archer(-3, "496378J", "SHCL", "ARCHER C", 'C',false));
-        standAloneArcherList[0].add(new Archer(-4, "713645Y", "SHCL", "ARCHER D", 'D',false));
-        standAloneArcherList[1] = new ArrayList<>();
-        standAloneArcherList[1].add(new Archer(-5, "653214Q", "SHCL", "ARCHER A", 'A',true));
-        standAloneArcherList[1].add(new Archer(-6, "894638S", "SHCL", "ARCHER B", 'B',true));
-        standAloneArcherList[1].add(new Archer(-7, "951674G", "SHCL", "ARCHER C", 'C',true));
-        standAloneArcherList[1].add(new Archer(-8, "951674G", "SHCL", "ARCHER D", 'D',true));
-        standAloneArcherList[2] = new ArrayList<>();
-        standAloneArcherList[2].add(new Archer(-9, "145789Y", "SHCL", "WINNIE L'OURSON", 'A',false));
-        standAloneArcherList[2].add(new Archer(-10, "145790Y", "SHCL", "COCO LAPIN", 'B',false));
-        standAloneArcherList[2].add(new Archer(-11, "145791Y", "SHCL", "TIGROU", 'C',true));
+        standAloneArcherList = new Vector<ArrayList<Archer>>(3);
+        standAloneArcherList.set(0, new ArrayList<Archer>());
+        standAloneArcherList.set(1, new ArrayList<Archer>());
+        standAloneArcherList.set(2, new ArrayList<Archer>());
+        standAloneArcherList.get(0).add(new Archer(-1, "123456H", "SHCL", "ARCHER A", 'A', false));
+        standAloneArcherList.get(0).add(new Archer(-2, "789951L", "SFCL", "ARCHER B", 'B',false));
+        standAloneArcherList.get(0).add(new Archer(-3, "496378J", "SHCL", "ARCHER C", 'C',false));
+        standAloneArcherList.get(0).add(new Archer(-4, "713645Y", "SHCL", "ARCHER D", 'D',false));
+        standAloneArcherList.get(1).add(new Archer(-5, "653214Q", "SHCL", "ARCHER A", 'A',true));
+        standAloneArcherList.get(1).add(new Archer(-6, "894638S", "SHCL", "ARCHER B", 'B',true));
+        standAloneArcherList.get(1).add(new Archer(-7, "951674G", "SHCL", "ARCHER C", 'C',true));
+        standAloneArcherList.get(1).add(new Archer(-8, "951674G", "SHCL", "ARCHER D", 'D',true));
+        standAloneArcherList.get(2).add(new Archer(-9, "145789Y", "SHCL", "WINNIE L'OURSON", 'A',false));
+        standAloneArcherList.get(2).add(new Archer(-10, "145790Y", "SHCL", "COCO LAPIN", 'B',false));
+        standAloneArcherList.get(2).add(new Archer(-11, "145791Y", "SHCL", "TIGROU", 'C',true));
 
 		
 	}

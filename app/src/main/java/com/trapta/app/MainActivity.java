@@ -1048,8 +1048,8 @@ public class MainActivity extends Activity implements OnItemClickListener, Watch
 				editor = pref.edit();
 				editor.putInt("matchId", -1);
 				editor.apply();
-				for (int index = 0; index < StaticParam.standAloneArcherList[targetId - 1].size(); index++) {
-					archerList.add(new Archer(StaticParam.standAloneArcherList[targetId - 1].get(index)));
+				for (int index = 0; index < StaticParam.standAloneArcherList.get(targetId - 1).size(); index++) {
+					archerList.add(new Archer(StaticParam.standAloneArcherList.get(targetId - 1).get(index)));
 
 				}
 				// write archerList to DB
