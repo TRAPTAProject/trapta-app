@@ -33,13 +33,13 @@ jobs:
         path: ${{ github.workspace }}/app/build/outputs/apk/release/app-release-unsigned.apk
 
 
-  release:
-    runs-on: ubuntu-18.04
-    defaults:
-      run:
-        shell: bash
-    needs: [build]
-    steps:
+  # release:
+  #   runs-on: ubuntu-18.04
+  #   defaults:
+  #     run:
+  #       shell: bash
+  #   needs: [build]
+  #   steps:
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
