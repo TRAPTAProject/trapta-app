@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="horizontal" >
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/enterVolley"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +41,7 @@
         />
 
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volley6Id"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content" >
 
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/volley61"
                 android:text="10+"
                 android:paddingLeft="10dp"
@@ -86,7 +86,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/volley62"
                 android:text="10+"
                 android:paddingLeft="10dp"
@@ -101,7 +101,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/volley63"
                 android:text="10+"
                 android:paddingLeft="10dp"
@@ -123,7 +123,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/volley64"
                 android:text="10+"
                 android:paddingLeft="10dp"
@@ -138,7 +138,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/volley65"
                 android:text="10+"
                 android:paddingLeft="10dp"
@@ -153,7 +153,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/volley66"
                 android:text="10+"
                 android:paddingLeft="10dp"
@@ -173,7 +173,7 @@
 
     </LinearLayout>
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volley6Sum"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -190,7 +190,7 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volley6CumulSum"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

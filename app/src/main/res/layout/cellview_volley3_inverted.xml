@@ -8,7 +8,7 @@
     android:orientation="horizontal" >
 
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/enterVolley"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         />
 
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volleyId"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -59,7 +59,7 @@
         android:layout_weight="1"
         android:typeface="monospace" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volley1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -75,7 +75,7 @@
         android:typeface="monospace"
         android:textStyle="bold" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volley2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -91,7 +91,7 @@
         android:typeface="monospace"
         android:textStyle="bold" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volley3"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -107,7 +107,7 @@
         android:typeface="monospace"
         android:textStyle="bold" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volleySum"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -123,7 +123,7 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/volleyCumulSum"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

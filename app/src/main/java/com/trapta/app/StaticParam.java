@@ -39,9 +39,9 @@ public class StaticParam {
         standAloneTargetInfo[2].addArcher('C', "TIGROU", true);
 
         standAloneArcherList = new Vector<ArrayList<Archer>>(3);
-        standAloneArcherList.set(0, new ArrayList<Archer>());
-        standAloneArcherList.set(1, new ArrayList<Archer>());
-        standAloneArcherList.set(2, new ArrayList<Archer>());
+        standAloneArcherList.add(new ArrayList<Archer>());
+        standAloneArcherList.add(new ArrayList<Archer>());
+        standAloneArcherList.add(new ArrayList<Archer>());
         standAloneArcherList.get(0).add(new Archer(-1, "123456H", "SHCL", "ARCHER A", 'A', false));
         standAloneArcherList.get(0).add(new Archer(-2, "789951L", "SFCL", "ARCHER B", 'B',false));
         standAloneArcherList.get(0).add(new Archer(-3, "496378J", "SHCL", "ARCHER C", 'C',false));

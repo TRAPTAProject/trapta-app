@@ -28,7 +28,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="right"
+            android:gravity="end"
             android:orientation="horizontal" >
 
             <ImageView
@@ -66,7 +66,7 @@
            android:orientation="horizontal"
            android:layout_height="wrap_content" >
 
-           <com.trapta.app.AutofitTextView
+           <TextView
                android:id="@+id/textRun"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:background="#37a4ce"
                 android:layout_width="2dp" />
 
-               <com.trapta.app.AutofitTextView
+               <TextView
                    android:id="@+id/textTarget"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                    android:maxLines="1"
                    android:textSize="30sp"
                    android:layout_weight="1"
-                   android:gravity="right"
+                   android:gravity="end"
                    android:textStyle="bold" />
 
 
@@ -101,78 +101,77 @@
         android:id="@+id/archerButtonLayout"
         android:layout_height="wrap_content" >
 
-        <com.trapta.app.AutofitButton
-            android:id="@+id/buttonA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/buttona"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="A"
-            android:maxLines="1"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+        <Button
+                android:id="@+id/buttonA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttona"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="A"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/scoreMatchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0 - 0"
+                android:maxLines="1"
+                android:textSize="50sp"
+                android:textStyle="bold" />
 
-        <com.trapta.app.AutofitTextView
-            android:id="@+id/scoreMatchText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="0 - 0"
-            android:maxLines="1"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-       
-       <com.trapta.app.AutofitButton
-            android:id="@+id/buttonB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/buttona"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="B"
-            android:maxLines="1"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-               
-       <com.trapta.app.AutofitButton
-            android:id="@+id/buttonC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/buttona"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="C"
-            android:maxLines="1"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-                      
-       <com.trapta.app.AutofitButton
-            android:id="@+id/buttonD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/buttona"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="D"
-            android:maxLines="1"
-            android:textColor="#FFFFFF"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+        <Button
+                android:id="@+id/buttonB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttona"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="B"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/buttonC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttona"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="C"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/buttonD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttona"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="D"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold" android:textAlignment="center"/>
         
        
 
     </LinearLayout>
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/textName"
         android:layout_width="fill_parent"
         android:layout_height="59dp"
@@ -186,7 +185,7 @@
         android:textSize="50sp"
         android:textStyle="bold" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/infoArcher"
         android:layout_width="fill_parent"
         android:layout_height="40dp"

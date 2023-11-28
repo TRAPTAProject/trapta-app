@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" />
 
-    <com.trapta.app.AutofitTextView
+    <TextView
         android:id="@+id/textMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
                
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/nameView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/nameView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/nameView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/trispot" />
 
-            <com.trapta.app.AutofitTextView
+            <TextView
                 android:id="@+id/nameView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -185,16 +185,16 @@
             android:textSize="25sp" />
 
 
-
-        <com.trapta.app.AutofitButton
-            android:id="@+id/button1select"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="OK"
-            android:layout_weight="1"
-            android:maxLines="1"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+        <Button
+                android:id="@+id/button1select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
 
     </LinearLayout>
   
