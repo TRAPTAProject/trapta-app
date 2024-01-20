@@ -4,7 +4,9 @@ android {
     namespace "com.trapta.app"
 
     compileSdkVersion 33
-
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
         applicationId "com.trapta.app"
         minSdkVersion 17

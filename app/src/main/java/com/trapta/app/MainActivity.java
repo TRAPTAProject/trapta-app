@@ -295,7 +295,7 @@ public class MainActivity extends Activity implements OnItemClickListener, Watch
 		Log.i("TRAPTA", "Starting TRAPTA Socket...");
 		titleView = (TextView) findViewById(R.id.title);
 
-		titleView.setText("  " + getResources().getString(R.string.title_main_activity));
+		titleView.setText(BuildConfig.VERSION_NAME);
 
 		StaticParam.colorInverted = pref.getBoolean("colorInverted", false);
 		checkColors();
@@ -958,7 +958,7 @@ public class MainActivity extends Activity implements OnItemClickListener, Watch
 
 		}
 
-		titleView.setText("  " + getResources().getString(R.string.title_main_activity));
+		titleView.setText(BuildConfig.VERSION_NAME);
 
 		if (requestCode == CODE_GUIDE_ACTIVITY && resultCode == RESULT_OK)
 			startVisualGuide1();
