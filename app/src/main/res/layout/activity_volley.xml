@@ -5,297 +5,305 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:orientation="horizontal"
-    android:paddingBottom="0dp"
     android:paddingLeft="0dp"
-    android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context=".MainActivity" >
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity">
 
-  <LinearLayout
+    <LinearLayout
         android:id="@+id/mainVerticalLayout"
         android:layout_width="250dp"
         android:layout_height="fill_parent"
         android:layout_marginRight="0dp"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/volleyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:singleLine="true"
             android:maxLines="1"
+            android:singleLine="true"
             android:text="Inconnu"
             android:textColor="#FFFFFF"
             android:textSize="40sp" />
-        
-         <TextView
-             android:id="@+id/volleyId"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:ellipsize="end"
-             android:singleLine="true"
-             android:maxLines="1"
-             android:text="Volée X"
-             android:textColor="#FFFFFF"
-             android:textSize="40sp"
-             android:textStyle="bold" />
 
-       
+        <TextView
+            android:id="@+id/volleyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Volée X"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            
-        android:gravity="bottom"
-            android:orientation="vertical" >
+
+            android:gravity="bottom"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/arrowLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp" 
-                >
+                android:typeface="monospace">
 
-                <Button
+                <com.trapta.app.AutofitButton
                     android:id="@+id/arrowLabel1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text=" Fleche 1 : "
                     android:maxLines="1"
+                    android:text=" Fleche 1 : "
                     android:textColor="#FFFFFF"
                     android:textSize="@dimen/arrow_button_text_size"
                     android:textStyle="bold"
+                    android:gravity="center_vertical"
                     android:typeface="sans" />
 
-                <Button
+                <com.trapta.app.AutofitButton
                     android:id="@+id/arrowValue1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/drawbuttonyellow"
                     android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLines="1"
                     android:singleLine="true"
                     android:text="10+"
-                    android:maxLines="1"
                     android:textColor="#000000"
                     android:textSize="35sp"
-                    android:textStyle="bold" />
-            
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
             </LinearLayout>
-            
+
             <LinearLayout
                 android:id="@+id/arrowLayout2"
-                                android:paddingBottom="10dp"
-                android:paddingTop="10dp" 
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal" >
-            
-            <Button
-                android:id="@+id/arrowLabel2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text=" Fleche 2 : "
-                android:maxLines="1"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/arrow_button_text_size"
-                android:textStyle="bold"
-                android:typeface="sans" />
-            
-           <Button
-                android:id="@+id/arrowValue2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/drawbuttonyellow"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="10+"
-                android:maxLines="1"
-                android:textColor="#000000"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-            
-            </LinearLayout>
-                 <LinearLayout
-                android:id="@+id/arrowLayout3"
-                                android:paddingBottom="10dp"
-                android:paddingTop="10dp" 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-            
-            <Button
-                android:id="@+id/arrowLabel3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text=" Fleche 3 : "
-                android:maxLines="1"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/arrow_button_text_size"
-                android:textStyle="bold"
-                android:typeface="sans" />
-            
-            <Button
-                android:id="@+id/arrowValue3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/drawbuttonblue"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="10+"
-                android:textColor="#000000"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-            
-            </LinearLayout>
-                 <LinearLayout
-                android:id="@+id/arrowLayout4"
-                                android:paddingBottom="10dp"
-                android:paddingTop="10dp" 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-            
-            <Button
-                android:id="@+id/arrowLabel4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:checked="true"
-                android:maxLines="1"
-                android:text=" Fleche 4 : "
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/arrow_button_text_size"
-                android:textStyle="bold"
-                android:typeface="sans" />
-            
-            <Button
-                android:id="@+id/arrowValue4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/drawbuttonred"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="10+"
-                android:textColor="#000000"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-            
-            </LinearLayout>
-                 <LinearLayout
-                android:id="@+id/arrowLayout5"
-                                android:paddingBottom="10dp"
-                android:paddingTop="10dp" 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-            
-            <Button
-                android:id="@+id/arrowLabel5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:checked="true"
-                android:maxLines="1"
-                android:text=" Fleche 5 : "
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/arrow_button_text_size"
-                android:textStyle="bold"
-                android:typeface="sans" />
-            
-            <Button
-                android:id="@+id/arrowValue5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/drawbuttonwhite"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="10+"
-                android:textColor="#000000"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-            
-            </LinearLayout>
-                 <LinearLayout
-                    android:id="@+id/arrowLayout6"
-                     android:paddingBottom="10dp"
-                    android:paddingTop="10dp"
+                android:orientation="horizontal"
+                android:typeface="monospace">
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:text=" Fleche 2 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/arrow_button_text_size"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:typeface="sans" />
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowValue2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal" >
-            
-            <Button
-                android:id="@+id/arrowLabel6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text=" Fleche 6 : "
-                android:maxLines="1"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/arrow_button_text_size"
-                android:textStyle="bold"
-                android:typeface="sans" />
-            
-            <Button
-                android:id="@+id/arrowValue6"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawbuttonyellow"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="10+"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrowLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/drawbuttonblue"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="10+"
-                android:textColor="#000000"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-            
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:typeface="monospace">
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:text=" Fleche 3 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/arrow_button_text_size"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:typeface="sans" />
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowValue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawbuttonblue"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="10+"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrowLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:typeface="monospace">
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowLabel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:maxLines="1"
+                    android:text=" Fleche 4 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/arrow_button_text_size"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:typeface="sans" />
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowValue4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawbuttonred"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="10+"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrowLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:typeface="monospace">
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowLabel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:maxLines="1"
+                    android:text=" Fleche 5 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/arrow_button_text_size"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:typeface="sans" />
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowValue5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawbuttonwhite"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="10+"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrowLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:typeface="monospace">
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowLabel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:text=" Fleche 6 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/arrow_button_text_size"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:typeface="sans" />
+
+                <com.trapta.app.AutofitButton
+                    android:id="@+id/arrowValue6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/drawbuttonblue"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="10+"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                
-                <Button
+
+                <com.trapta.app.AutofitButton
                     android:id="@+id/abortButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:maxLines="1"
                     android:background="@drawable/abortbutton"
-                    android:padding="20dp"
                     android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="20dp"
                     android:singleLine="true"
                     android:text="Annuler"
                     android:textColor="#FFFFFF"
-                    android:textSize="30sp" />
-                
-                <Button
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <com.trapta.app.AutofitButton
                     android:id="@+id/okButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:gravity="center"
-                    android:singleLine="true"
+                    android:layout_weight="1"
                     android:background="@drawable/okbuttondark"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
                     android:padding="20dp"
+                    android:singleLine="true"
                     android:text="Valider"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -307,161 +315,167 @@
 
     </LinearLayout>
 
-  <LinearLayout
-      android:id="@+id/buttonValueLayout"
-      android:layout_width="match_parent"
-      android:layout_height="fill_parent"
-      android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/buttonValueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
-      <Button
+        <com.trapta.app.AutofitButton
             android:id="@+id/button11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-
-            android:textStyle="bold"
-                  android:maxLines="1"
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonyellow"
-            android:text="10X" />
-        <Button
+            android:maxLines="1"
+            android:text="10+"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:maxLines="1"
-
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonyellow"
-            android:text="10" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="10"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:maxLines="1"
-            android:textStyle="bold"
-
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonyellow"
-            android:text="9" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="9"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/drawbuttonred"
-            android:text="8"
             android:maxLines="1"
+            android:text="8"
             android:textColor="#FFFFFF"
+            android:gravity="center"
             android:textSize="35sp"
             android:textStyle="bold" />
-        
-        <Button
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/drawbuttonred"
-            android:text="7"
             android:maxLines="1"
+            android:text="7"
             android:textColor="#FFFFFF"
+            android:gravity="center"
             android:textSize="35sp"
             android:textStyle="bold" />
-        
-        <Button
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-
-            android:maxLines="1"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonblue"
-            android:text="6" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="6"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:maxLines="1"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonblue"
-            android:text="5" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="5"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:maxLines="1"
-            android:textColor="#FFFFFF"
             android:background="@drawable/drawbuttonblack"
-            android:text="4" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:maxLines="1"
             android:background="@drawable/drawbuttonblack"
-            android:text="3" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:maxLines="1"
-            android:textStyle="bold"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonwhite"
-            android:text="2" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="2"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/okButtonSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:maxLines="1"
-
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonwhite"
-            android:text="1" />
-        
-        <Button
+            android:maxLines="1"
+            android:text="1"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.trapta.app.AutofitButton
             android:id="@+id/buttonM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:maxLines="1"
-            android:textColor="#000000"
             android:background="@drawable/drawbuttonwhite"
-            android:text="M" />
+            android:maxLines="1"
+            android:text="M"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

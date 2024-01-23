@@ -7,32 +7,38 @@
     android:gravity="center"
     android:orientation="horizontal" >
 
-    <TextView
+    <com.trapta.app.AutofitTextView
         android:id="@+id/enterVolley"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#000000"
         android:gravity="center"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
+        android:maxLines="1"
         android:textColor="#FFFFFF"
         android:textSize="35sp"
-        android:textStyle="bold"
-        android:maxLines="1"
-        android:layout_weight="1"
-        />
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/summary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:textColor="#000000"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="25sp"
-        android:typeface="monospace"
-        />
+        android:typeface="monospace" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-    <TextView
+    <com.trapta.app.AutofitTextView
         android:id="@+id/volley6Id"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -49,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/volley6Layout"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:orientation="vertical" >
 
         <LinearLayout
@@ -57,40 +63,41 @@
             android:layout_height="wrap_content" >
 
 
-            <TextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/volley61"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:maxLines="1"
                 android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp"
                 android:textStyle="bold"
                 android:typeface="monospace" />
 
-            <TextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/volley62"
-                android:typeface="monospace"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_weight="1"
                 android:maxLines="1"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp"
-                android:layout_weight="1"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:typeface="monospace" />
 
-            <TextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/volley63"
-                android:typeface="monospace"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_weight="1"
                 android:maxLines="1"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp"
-                android:layout_weight="1"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:typeface="monospace" />
 
 
         </LinearLayout>
@@ -99,69 +106,73 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <TextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/volley64"
-                android:typeface="monospace"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_weight="1"
                 android:maxLines="1"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp"
-                android:layout_weight="1"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:typeface="monospace" />
 
-            <TextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/volley65"
-                android:typeface="monospace"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_weight="1"
                 android:maxLines="1"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp"
-                android:layout_weight="1"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:typeface="monospace" />
 
-            <TextView
+            <com.trapta.app.AutofitTextView
                 android:id="@+id/volley66"
-                android:typeface="monospace"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_weight="1"
                 android:maxLines="1"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp"
-                android:layout_weight="1"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:typeface="monospace" />
 
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
+    <com.trapta.app.AutofitTextView
         android:id="@+id/volley6Sum"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#000000"
-        android:gravity="center"
         android:maxLines="1"
-        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:background="#000000" />
 
-    <TextView
+    <com.trapta.app.AutofitTextView
         android:id="@+id/volley6CumulSum"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#ffffff"
+        android:maxLines="1"
         android:gravity="center"
         android:textColor="#000000"
-        android:maxLines="1"
         android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:background="#ffffff" />
+    </TableRow>
+    </TableLayout>
 
 </LinearLayout>
