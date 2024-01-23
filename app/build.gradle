@@ -11,8 +11,8 @@ android {
         applicationId "com.trapta.app"
         minSdkVersion 17
         targetSdkVersion 33
-        versionCode 132
-        versionName "1.32"
+        versionCode 133
+        versionName "1.33"
     }
     buildTypes {
         release {

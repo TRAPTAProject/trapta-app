@@ -127,14 +127,14 @@ public class Volley6ListAdapter extends VolleyListAdapter {
 	    	volleySum.setVisibility(View.VISIBLE);
 	        volleyCumulSum.setVisibility(View.VISIBLE);
 
-			id.setText(Integer.toString(position+1));
+			id.setText(String.format("%2d", position+1));
 	        if (volley.getArrowList().size()==6) {
-				volley1.setText(volley.getArrowList().get(0).toString());
-				volley2.setText(volley.getArrowList().get(1).toString());
-				volley3.setText(volley.getArrowList().get(2).toString());
-				volley4.setText(volley.getArrowList().get(3).toString());
-				volley5.setText(volley.getArrowList().get(4).toString());
-				volley6.setText(volley.getArrowList().get(5).toString());
+				volley1.setText(volley.getArrowList().get(0).toPaddedString());
+				volley2.setText(volley.getArrowList().get(1).toPaddedString());
+				volley3.setText(volley.getArrowList().get(2).toPaddedString());
+				volley4.setText(volley.getArrowList().get(3).toPaddedString());
+				volley5.setText(volley.getArrowList().get(4).toPaddedString());
+				volley6.setText(volley.getArrowList().get(5).toPaddedString());
 				if (!StaticParam.colorInverted) {
 					volley1.setBackgroundResource(getBackgroundResource(volley.getArrowList().get(0).getValue()));
 					volley2.setBackgroundResource(getBackgroundResource(volley.getArrowList().get(1).getValue()));
@@ -152,8 +152,8 @@ public class Volley6ListAdapter extends VolleyListAdapter {
 
 			}
 
-			volleySum.setText(Integer.toString(volley.getScore()));
-			volleyCumulSum.setText(Integer.toString(heat.getScore(position)));
+			volleySum.setText(String.format("%3d", volley.getScore()));
+			volleyCumulSum.setText(String.format("%3d", heat.getScore(position)));
 	        	        
 	    }
 

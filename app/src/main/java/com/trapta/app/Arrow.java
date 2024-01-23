@@ -1,5 +1,7 @@
 package com.trapta.app;
- 
+
+import android.annotation.SuppressLint;
+
 public class Arrow {
 	
 	// codes are: 
@@ -37,11 +39,18 @@ public class Arrow {
 		if ((code<-1) || (code>11)) code = -1;
 	}
 	
+	@SuppressLint("DefaultLocale")
 	public String toString() {
-		if (code==11) return "10X";
+		if (code==11) return "10+";
 		if (code==-1) return "?";
 		if (code==0) return "M";
-		return ""+code;
+		return String.format("%d", code);
+	}
+	public String toPaddedString() {
+		if (code==11) return "10+";
+		if (code==-1) return "  ?";
+		if (code==0) return "  M";
+		return String.format("%3d", code);
 	}
 
 }
